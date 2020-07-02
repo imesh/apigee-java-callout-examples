@@ -2,6 +2,12 @@
 
 This is an example Apigee Java Callout policy for base64 encoding and decoding string values.
 
+## Prerequisites
+
+Following prerequisites are required for compiling Java Callout source code:
+1. JDK v1.8.x
+2. Apache Maven v3.x
+
 ## How to Run
 
 1. Clone this git repository and switch to base64-java-callout/ folder:
