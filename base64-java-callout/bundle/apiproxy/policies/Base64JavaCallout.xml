@@ -1,0 +1,9 @@
+<JavaCallout name='Base64JavaCallout'>
+  <Properties>
+    <Property name="INTPUT_FLOW_VARIABLE">message.header.ENCODED_VALUE</Property>
+    <Property name="OUTPUT_FLOW_VARIABLE">response.content</Property>
+    <Property name="ACTION">decode</Property>
+  </Properties>
+  <ClassName>com.imesh.apigee.callouts.Base64JavaCallout</ClassName>
+  <ResourceURL>java://base64-java-callout-0.1.0.jar</ResourceURL>
+</JavaCallout>

@@ -1,0 +1,7 @@
+<AssignMessage name='ClearRequestHeaders'>
+  <DisplayName>ClearRequestHeaders</DisplayName>
+  <Remove>
+    <Headers/>
+  </Remove>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>
