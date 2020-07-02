@@ -8,7 +8,7 @@ Following prerequisites are required for compiling Java Callout source code:
 1. JDK v1.8.x
 2. Apache Maven v3.x
 
-## How to Run
+## How to Build
 
 1. Clone this git repository and switch to base64-java-callout/ folder:
 
@@ -88,6 +88,11 @@ Connection: keep-alive
 
 Hello world
 ```
+
+## References
+- [How to create an Apigee Java Callout](https://docs.apigee.com/api-platform/samples/cookbook/how-create-java-callout)
+- [Apigee Java Callout Policy](https://docs.apigee.com/api-platform/reference/policies/java-callout-policy)
+- [Apigee Flow Variables Reference](https://docs.apigee.com/api-platform/reference/variables-reference)
 
 ## License
 
