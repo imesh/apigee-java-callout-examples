@@ -1,9 +1,9 @@
-<APIProxy revision='1' name='base64-java-callout'>
+<APIProxy revision='1' name='Base64-Java-Callout'>
   <ConfigurationVersion minorVersion='0' majorVersion='4'/>
   <CreatedAt>1593666768</CreatedAt>
   <CreatedBy>Imesh</CreatedBy>
   <Description></Description>
-  <DisplayName>base64-java-callout</DisplayName>
+  <DisplayName>Base64 Java Callout</DisplayName>
   <LastModifiedAt>1593666768</LastModifiedAt>
   <LastModifiedBy>orgAdmin</LastModifiedBy>
 </APIProxy>

@@ -1,23 +1,14 @@
-// ExampleCallout.java
-//
-// This is the source code for an example Java callout for Apigee.
-// This callout is very simple - it retrieves a setting, sets
-// a variable and a header, and then returns SUCCESS.
-//
-// ------------------------------------------------------------------
-
 package com.imesh.apigee.callouts;
 
 import com.apigee.flow.execution.ExecutionContext;
 import com.apigee.flow.execution.ExecutionResult;
 import com.apigee.flow.execution.spi.Execution;
-import com.apigee.flow.message.Message;
 import com.apigee.flow.message.MessageContext;
 import java.util.Base64;
 import java.util.Map;
 
 /**
- * Apigee Java callout for decoding base64 values.
+ * Apigee Java callout for base64 encoding and decoding string values.
  */
 public class Base64JavaCallout implements Execution {
 
@@ -34,10 +25,16 @@ public class Base64JavaCallout implements Execution {
   public ExecutionResult execute(final MessageContext messageContext, final ExecutionContext executionContext) {
     try {
       if(this.inputFlowVariable != null && this.outputFlowVariable != null && this.action != null) {
-        if("decode".equals(this.action)) {
-          String encodedValue = messageContext.getVariable(this.inputFlowVariable);
-          if(encodedValue != null) {
-            byte[] decodedValue = Base64.getDecoder().decode(encodedValue.getBytes());
+        if("encode".equals(this.action)) {
+          String inputValue = messageContext.getVariable(this.inputFlowVariable);
+          if(inputValue != null) {
+            byte[] encodedValue = Base64.getEncoder().encode(inputValue.getBytes());
+            messageContext.setVariable(this.outputFlowVariable, new String(encodedValue, "UTF-8"));
+          }
+        } else if("decode".equals(this.action)) {
+          String inputValue = messageContext.getVariable(this.inputFlowVariable);
+          if(inputValue != null) {
+            byte[] decodedValue = Base64.getDecoder().decode(inputValue.getBytes());
             messageContext.setVariable(this.outputFlowVariable, new String(decodedValue, "UTF-8"));
           }
         }

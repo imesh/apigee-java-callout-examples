@@ -19,10 +19,18 @@
   </PostFlow>
 
   <Flows>
+  <Flow name='encode'>
+      <Request/>
+      <Response>
+        <Step><Name>Base64JavaCallout-Encode</Name></Step>
+        <Step><Name>ClearRequestHeaders</Name></Step>
+      </Response>
+      <Condition>(proxy.pathsuffix ~ "/encode") and (request.verb = "GET")</Condition>
+    </Flow>
     <Flow name='decode'>
       <Request/>
       <Response>
-        <Step><Name>Base64JavaCallout</Name></Step>
+        <Step><Name>Base64JavaCallout-Decode</Name></Step>
         <Step><Name>ClearRequestHeaders</Name></Step>
       </Response>
       <Condition>(proxy.pathsuffix ~ "/decode") and (request.verb = "GET")</Condition>
