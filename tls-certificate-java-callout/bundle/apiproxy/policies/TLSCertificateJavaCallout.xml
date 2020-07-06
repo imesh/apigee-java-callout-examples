@@ -1,0 +1,8 @@
+<JavaCallout name='TLSCertificateJavaCallout'>
+  <Properties>
+    <Property name="TLS_CERTIFICATE_FLOW_VARIABLE">message.header.TLS_CERT</Property>
+    <Property name="OUTPUT_PREFIX">tls-certificate-java-callout</Property>
+  </Properties>
+  <ClassName>com.imesh.apigee.callouts.TLSCertificateJavaCallout</ClassName>
+  <ResourceURL>java://tls-certificate-java-callout-0.1.0.jar</ResourceURL>
+</JavaCallout>

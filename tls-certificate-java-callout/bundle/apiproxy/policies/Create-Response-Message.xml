@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Create-Response-Message">
+    <DisplayName>Create-Response-Message</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json" variablePrefix="%" variableSuffix="#">{
+    "subject": "%tls-certificate-java-callout.subject#",
+    "serialNo": "%tls-certificate-java-callout.serial.no#",
+    "validFrom": "%tls-certificate-java-callout.valid.from#",
+    "validTo": "%tls-certificate-java-callout.valid.to#",
+    "issuer": "%tls-certificate-java-callout.issuer#",
+    "publicKey": "%tls-certificate-java-callout.public.key#",
+    "sigAlgName": "%tls-certificate-java-callout.sig.alg.name#",
+    "subjectAlternativeNames": "%tls-certificate-java-callout.subject.alternative.names#"
+}
+</Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,9 @@
+<APIProxy revision='1' name='TLS-Certificate-Java-Callout'>
+  <ConfigurationVersion minorVersion='0' majorVersion='4'/>
+  <CreatedAt>1593666768</CreatedAt>
+  <CreatedBy>Imesh</CreatedBy>
+  <Description></Description>
+  <DisplayName>TLS Certificate Java Callout</DisplayName>
+  <LastModifiedAt>1593666768</LastModifiedAt>
+  <LastModifiedBy>orgAdmin</LastModifiedBy>
+</APIProxy>
