@@ -2,6 +2,7 @@
 
 This repository contains following Apigee Java Callout examples:
 - [Base64 Java Callout](base64-java-callout/)
+- [TLS Certificate Java Callout](tls-certificate-java-callout/)
 
 ## License
 
