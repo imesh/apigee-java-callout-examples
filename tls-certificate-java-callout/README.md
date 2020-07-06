@@ -73,6 +73,10 @@ Connection: keep-alive
 - [Apigee Java Callout Policy](https://docs.apigee.com/api-platform/reference/policies/java-callout-policy)
 - [Apigee Flow Variables Reference](https://docs.apigee.com/api-platform/reference/variables-reference)
 
+## Support
+
+Java Callout policies included in this repository are not supported by Apigee. Please [create an issue](https://github.com/imesh/apigee-java-callout-examples/issues/new) for reporting any problems or providing feedback.
+
 ## License
 
 [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
